@@ -58,19 +58,19 @@ img {
 /* ---- Footer Navigation ---- */
 
 hr {
-    border: 0;
+    margin-bottom: 1em;
     height: 0;
+    border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    margin-bottom: 1em;
 }
 .name-footer {
     float: left;
     margin-top: 0;
 }
 .footer-nav-btt {
-    font-size: 1em;
     float: right;
+    font-size: 1em;
 }
 .footer-nav {
     display: none;
@@ -87,7 +87,7 @@ hr {
 .portfolio,
 .contact,
 .nav-footer-btt {
-    padding: 1em 0;
+    padding: 2em 0;
 }
 .portfolio {
     background: #fff;
@@ -103,6 +103,7 @@ hr {
 }
 .title {
     margin: 20px 0;
+    text-align: center;
 }
 .contact p:nth-child(3),
 .contact p:nth-child(4) {
@@ -122,45 +123,45 @@ hr {
 ==================================== */
 
 @media (min-width: 768px) {
-    
     /* ---- Navigation ---- */
+    .main-header {
+        padding-bottom: 0;
+        text-align: center;
+    }
     .name {
-        float: left;
         font-size: 1.5em;
     }
     .main-nav {
-        float: right;
+        margin-bottom: 20px;
     }
     .main-nav li {
-        float: left;
+        display: inline-block;
     }
     .main-nav li a {
         background: none;
     }
-    
     /* ---- Footer Navigation ---- */
     .name-footer {
         float: left;
     }
     .footer-nav {
         display: block;
-        font-size: 1em;
         float: right;
+        font-size: 1em;
     }
     .footer-nav li {
         float: left;
-        font-size: .7em;
         margin-right: 20px;
+        font-size: .7em;
     }
     .footer-nav-btt {
         display: none;
     }
-    
     /* ---- Layout Containers ---- */
     .container {
         margin: 0 auto;
-        width: 90%;
         max-width: 1000px;
+        width: 90%;
     }
     .col {
         float: left;
@@ -184,24 +185,34 @@ hr {
         float: left;
         text-align: left;
     }
-    
     /* ---- Page Elements ---- */
     .title {
         font-size: 1em;
     }
 }
 @media (min-width: 1024px) {
-    
+    .name {
+        float: left;
+        font-size: 1.5em;
+    }
+    .main-nav {
+        float: right;
+    }
+    .main-nav li {
+        float: left;
+    }
+    .main-nav li a {
+        background: none;
+    }
     /* ---- Navigation ---- */
     .main-nav {
         padding-top: 1em;
     }
     .main-nav a {
-        padding: 0;
         margin: 0 20px;
+        padding: 0;
         font-size: .8em;
     }
-    
     /* ---- Layout Containers ---- */
     .container {
         width: 60%;
